@@ -4,7 +4,7 @@
 // Camera: price_1LnUUoDM1jwCEz8OvxIcJ7to
 const express = require('express');
 var cors = require('cors');
-const stripe = require('stripe')('sk_test_51KqMChIYkORfeKopWfdfFTrbANSfmXL3JG5eRrNOFYThK3eKMdwdYw5j198PpAAjHgBzmdM92HLghRAKcKhi9g1p00YsYso4sD');
+const stripe = require('stripe')('');
 
 const app = express();
 app.use(cors());
