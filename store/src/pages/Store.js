@@ -1,4 +1,4 @@
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Pagination, Container} from 'react-bootstrap';
 import { productsArray } from '../productsStore';
 import ProductCard from '../components/ProductCard';
 // [{... }, {... }, {... }]
@@ -14,6 +14,19 @@ function Store() {
                     </Col>
                 ))}
             </Row>
+            <Container fluid>
+            <Row >
+                <Col md={{ span: 6, offset: 5 }}>
+            <Pagination>
+                <Pagination.First />
+                <Pagination.Prev />
+                <Pagination.Item>{1}</Pagination.Item>
+                <Pagination.Next />
+                <Pagination.Last />
+            </Pagination>
+            </Col>
+            </Row>
+            </Container>
         </>
     )
 }

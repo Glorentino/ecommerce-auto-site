@@ -1,7 +1,8 @@
-import {Button, Container, Navbar, Modal, Dropdown, DropdownButton} from 'react-bootstrap';
+import {Button, Container, Navbar, Modal, Dropdown, DropdownButton, NavDropdown } from 'react-bootstrap';
 import { useState, useContext } from 'react';
 import { CartContext } from "../CartContext";
 import CartProduct from './CartProduct';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavbarComponent() {
     const cart = useContext(CartContext);
@@ -30,6 +31,7 @@ function NavbarComponent() {
 
     return (
         <>
+            
             <Navbar expand="sm " bg="dark" variant="dark">
                 <Navbar.Brand href="/">Contuso</Navbar.Brand>
                 <Navbar.Brand href="/" >Home</Navbar.Brand>
@@ -39,12 +41,12 @@ function NavbarComponent() {
                 <Navbar.Collapse className="justify-content-end">
                     <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
                 </Navbar.Collapse>
-                <DropdownButton id="dropdown-item-button" title="Account" >
-              <Dropdown.ItemText>User</Dropdown.ItemText>
-              <Dropdown.Item as="button" href="/">Profile</Dropdown.Item>
-              <Dropdown.Item as="button">Setting</Dropdown.Item>
-              <Dropdown.Item as="button" > Sign Out</Dropdown.Item>
-              </DropdownButton>
+                <NavDropdown as="button" title="Account" id="basic-navbar-nav"variant="pills">
+              <NavDropdown.ItemText>User</NavDropdown.ItemText>
+              <NavDropdown.Item  href="/profile">Profile</NavDropdown.Item>
+              <NavDropdown.Item href="/settings">Setting</NavDropdown.Item>
+              <NavDropdown.Item as="button" > Sign Out</NavDropdown.Item>
+              </NavDropdown>
             </Navbar>
             
             <Modal show={show} onHide={handleClose}>

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './components/Navbar';
@@ -10,6 +9,7 @@ import Success from './pages/Success';
 import CartProvider from './CartContext';
 import About from './pages/about';
 import Home from './pages';
+import Profile from './pages/profile';
 // localhost:3000 -> Home
 // localhost:3000/success -> Success
 import { Navbar } from 'react-bootstrap';
@@ -26,6 +26,7 @@ function App() {
             <Route path="success" element={<Success />} />
             <Route path="cancel" element={<Cancel />} />
             <Route path ="about" index element={<About />} />
+            <Route path ="profile" index element={<Profile />} />
           </Routes>
         </BrowserRouter>
       </Container>

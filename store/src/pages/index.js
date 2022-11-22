@@ -19,60 +19,60 @@ const Home = () => {
             <title>Home | Contuso</title>
             <body>
               <main>
-              <Carousel>
-      <Carousel.Item>
-        
-        <img
-          className="d-block w-100"
-          src={m3}
-          alt="First slide"
-        />
-        <Carousel.Caption >
-          <div class="car-slide">
-          <h3 > BMW M3</h3>
-          <p>Fast</p>
-          </div>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={typeR}
-          alt="Second slide"
-        />
+            <Carousel className="carousel-css">
+                <Carousel.Item>
+                  
+                  <img
+                    className="d-block w-100"
+                    src={m3}
+                    alt="First slide"
+                  />
+                  <Carousel.Caption >
+                    <div class="car-slide">
+                    <h3 > BMW M3</h3>
+                    <p>Fast</p>
+                    </div>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={typeR}
+                    alt="Second slide"
+                  />
 
-        <Carousel.Caption>
-        <div class="car-slide">
-          <h3>Honda Type R</h3>
-          <p>Fast</p>
-        </div>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={m4}
-          alt="Third slide"
-        />
+                  <Carousel.Caption>
+                  <div class="car-slide">
+                    <h3>Honda Type R</h3>
+                    <p>Fast</p>
+                  </div>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={m4}
+                    alt="Third slide"
+                  />
 
-        <Carousel.Caption>
-        <div class="car-slide">
-          <h3>BMW M4</h3>
-          <p>
-          Fast
-          </p>
-        </div>
-        </Carousel.Caption>
-        
-      </Carousel.Item>
+                  <Carousel.Caption>
+                  <div class="car-slide">
+                    <h3>BMW M4</h3>
+                    <p>
+                    Fast
+                    </p>
+                  </div>
+                  </Carousel.Caption>
+                  
+                </Carousel.Item>
     </Carousel>
 </main>
       <div className="front-page">
         <h2>Constuso</h2>
         <h3>#1 - Online Auto Dealership on the Internet</h3>
       </div>
-      <Container fluid >
-              <Row>
+      <Container fluid className="figure-css">
+              <Row> 
                 <Col>
                 <Figure>
       <Figure.Image
