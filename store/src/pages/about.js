@@ -5,8 +5,8 @@ const About = () => {
         <header>
         <h1 >Contuso</h1>
         </header>
-        <section class="content-section container">
-            <h2 class="section-header">ABOUT US</h2>
+        <section className="content-section container">
+            <h2 className="section-header">ABOUT US</h2>
             <img width={800}src={m4}></img>
             <p>Based in the US, Contuso is the #1 auto part ecommerce site on the Internet. 
                 First established in 3000. Over the years, We built many partnerships with the most elite car manufacturers on the planet. 
@@ -16,8 +16,8 @@ const About = () => {
             <p> We are Contuso. </p>
             
         </section>
-        <section class="content-section container">
-            <h2 class="section-header">CONTACT US</h2>
+        <section className="content-section container">
+            <h2 className="section-header">CONTACT US</h2>
             <h3> EMAIL</h3>
             <p>
                 help@contuso.com

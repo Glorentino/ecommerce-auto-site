@@ -32,7 +32,7 @@ function NavbarComponent() {
     return (
         <>
             
-            <Navbar expand="sm " bg="dark" variant="dark">
+            <Navbar expand="sm" bg="dark" variant="dark">
                 <Navbar.Brand href="/">Contuso</Navbar.Brand>
                 <Navbar.Brand href="/" >Home</Navbar.Brand>
                 <Navbar.Brand href="/market">Market</Navbar.Brand>

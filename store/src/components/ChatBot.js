@@ -30,7 +30,7 @@ const steps = [
             // options to choose we create alist
             // like this
             { value: 1, label: 'Order Status' },
-            { value: 2, label: 'Speak to a representative' },
+            { value: 2, label: 'Speak to a representative' }
   
         ],
         end: true
@@ -69,6 +69,6 @@ const steps = [
             </ThemeProvider>
     
     </div>
-  )
+  );
 }
 export default Chatbot;

@@ -18,3 +18,10 @@ h1 {
 .figure-css{
     background-color: rgba(255, 255, 255, 0.801);
 }
+.cont{
+    width: 100%;
+    margin: auto;
+}
+.market-items{
+    padding: 5px 100px 100px 100px;
+}
